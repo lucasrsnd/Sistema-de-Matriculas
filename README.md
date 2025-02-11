@@ -14,13 +14,18 @@ O Sistema de Matrículas é um projeto desenvolvido durante a disciplina de labo
 # Histórias de Usuário
 | ID  | História de Usuário |
 |----|--------------------|
-| UC1  |  |
-| UC2  |  |
-| UC3  |  |
-| UC4  |  |
-| UC5  |  |
-| UC6  |  |
-| UC7  |  |
-| UC8  |  |
-| UC9  |  |
-| UC10 |  |
+| UC1  | Como aluno, quero me matricular em até 4 disciplinas para o semestre. |
+| UC2  | Como aluno, quero receber um boleto com o valor correspondente às disciplinas nas quais estou matriculado. |
+| UC3  | Como aluno, quero cancelar minha matrícula em uma disciplina antes do fim do período de matrículas. |
+| UC4  | Como aluno, quero visualizar todas as disciplinas nas quais estou matriculado. |
+| UC5  | Como aluno, quero acessar o sistema com meu login e senha. |
+| UC6  | Como professor, quero visualizar a lista de alunos matriculados em minhas disciplinas. |
+| UC7  | Como professor, quero visualizar as disciplinas do curso. |
+| UC8  | Como professor, quero acessar o sistema com meu login e senha. |
+| UC9  | Como secretário acadêmico, quero definir e atualizar o currículo do semestre. |
+| UC10 | Como secretário acadêmico, quero criar turmas para cada curso. |
+| UC11 | Como secretário acadêmico, quero visualizar matrículas feitas pelos alunos. |
+| UC12 | Como secretário acadêmico, quero definir os períodos de matrícula no sistema. |
+| UC13 | Como secretário acadêmico, quero gerenciar a quantidade de alunos por disciplina. |
+| UC14 | Como secretário acadêmico, quero criar usuários para que alunos e professores tenham acesso ao sistema. |
+| UC15 | Como secretário acadêmico, quero acessar o sistema com meu login e senha. |
