@@ -1,8 +1,9 @@
-# Acadêmico+
-Este projeto implementa um Sistema de Matrículas para uma universidade, permitindo que alunos realizem inscrições em disciplinas, consultem turmas e façam cancelamentos dentro do período estipulado. Professores podem visualizar os alunos matriculados, e o sistema gerencia a ativação de disciplinas com base no número mínimo de inscritos. Além disso, há integração com o sistema de cobranças para processar pagamentos das disciplinas cursadas. O acesso ao sistema é controlado por autenticação de usuários.
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00BFFF&height=120&section=header"/>
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=fff&size=35&center=true&vCenter=true&width=1000&lines=Acadêmico+Plus)](https://git.io/typing-svg)
 
 # Sobre o projeto
-O Sistema de Matrículas é um projeto desenvolvido durante a disciplina de laboratório de projeto de software, o qual gerencia o processo de inscrição de alunos em disciplinas universitárias. Oferece funcionalidades para alunos, professores e a administração acadêmica, garantindo um gerenciamento mais organizado.
+Este projeto implementa um Sistema de Matrículas para uma universidade, permitindo que alunos realizem inscrições em disciplinas, consultem turmas e façam cancelamentos dentro do período estipulado. Professores podem visualizar os alunos matriculados, e o sistema gerencia a ativação de disciplinas com base no número mínimo de inscritos. Além disso, há integração com o sistema de cobranças para processar pagamentos das disciplinas cursadas. O acesso ao sistema é controlado por autenticação de usuários.
 
 # Diagrama de Caso de Uso
 <img width="2992" alt="Image" src="https://github.com/user-attachments/assets/9437e729-a1b8-47be-8c0a-6d8bbf61c4df" />
@@ -29,3 +30,5 @@ O Sistema de Matrículas é um projeto desenvolvido durante a disciplina de labo
 | UC13 | Como secretário acadêmico, quero gerenciar a quantidade de alunos por disciplina. |
 | UC14 | Como secretário acadêmico, quero criar usuários para que alunos e professores tenham acesso ao sistema. |
 | UC15 | Como secretário acadêmico, quero acessar o sistema com meu login e senha. |
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00BFFF&height=120&section=footer"/>
