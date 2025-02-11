@@ -5,7 +5,7 @@ Este projeto implementa um Sistema de Matrículas para uma universidade, permiti
 O Sistema de Matrículas é um projeto desenvolvido durante a disciplina de laboratório de projeto de software, o qual gerencia o processo de inscrição de alunos em disciplinas universitárias. Oferece funcionalidades para alunos, professores e a administração acadêmica, garantindo um gerenciamento mais organizado.
 
 # Diagrama de Caso de Uso
-
+<img width="2992" alt="Image" src="https://github.com/user-attachments/assets/93deae21-4db7-4131-a34e-010c3f1e8a8b" />
 
 
 
@@ -23,3 +23,4 @@ O Sistema de Matrículas é um projeto desenvolvido durante a disciplina de labo
 | UC7  |  |
 | UC8  |  |
 | UC9  |  |
+| UC10 |  |
