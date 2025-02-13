@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=fff&size=35&center=true&vCenter=true&width=1000&lines=Acadêmico+Plus)](https://git.io/typing-svg)
 
 # Sobre o projeto
-Este projeto implementa um Sistema de Matrículas para uma universidade, permitindo que alunos realizem inscrições em disciplinas, consultem turmas e façam cancelamentos dentro do período estipulado. Professores podem visualizar os alunos matriculados, e o sistema gerencia a ativação de disciplinas com base no número mínimo de inscritos. Além disso, há integração com o sistema de cobranças para processar pagamentos das disciplinas cursadas. O acesso ao sistema é controlado por autenticação de usuários.
+Este projeto informatiza o processo de matrículas da universidade, facilitando a gestão de cursos, disciplinas, alunos e professores. Os alunos podem se inscrever em até quatro disciplinas obrigatórias e duas optativas dentro do período de matrículas, podendo também cancelar inscrições. Para que uma disciplina seja oferecida, é necessário um mínimo de três alunos matriculados, com um limite máximo de 60 por turma. O sistema também integra notificações para cobrança das disciplinas e permite que os professores consultem as listas de alunos matriculados. O acesso é protegido por login e senha, garantindo a segurança das informações.
 
 # Diagrama de Caso de Uso
 <img width="2992" alt="Image" src="https://github.com/user-attachments/assets/9437e729-a1b8-47be-8c0a-6d8bbf61c4df" />
