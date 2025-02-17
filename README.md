@@ -8,10 +8,6 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 # Diagrama de Caso de Uso
 <img width="2992" alt="Image" src="https://github.com/user-attachments/assets/5af13a46-748a-4acd-95bb-34073c513302" />
 
-
-
-
-
 # Histórias de Usuário
 | ID  | História de Usuário |
 |----|--------------------|
@@ -30,5 +26,8 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 | UC13 | Como secretário acadêmico, quero gerenciar a quantidade de alunos por disciplina. |
 | UC14 | Como secretário acadêmico, quero criar usuários para que alunos e professores tenham acesso ao sistema. |
 | UC15 | Como secretário acadêmico, quero acessar o sistema com meu login e senha. |
+
+# Diagrama de Classes
+<img width="3216" alt="Image" src="https://github.com/user-attachments/assets/8e8f4593-c51e-447f-9cdb-e0f866f18e3c" />
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00BFFF&height=120&section=footer"/>
