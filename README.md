@@ -6,7 +6,7 @@
 Este projeto informatiza o processo de matrículas da universidade, facilitando a gestão de cursos, disciplinas, alunos e professores. Os alunos podem se inscrever em até quatro disciplinas obrigatórias e duas optativas dentro do período de matrículas, podendo também cancelar inscrições. Para que uma disciplina seja oferecida, é necessário um mínimo de três alunos matriculados, com um limite máximo de 60 por turma. O sistema também integra notificações para cobrança das disciplinas e permite que os professores consultem as listas de alunos matriculados. O acesso é protegido por login e senha, garantindo a segurança das informações.
 
 # Diagrama de Caso de Uso
-<img width="2992" alt="Image" src="https://github.com/user-attachments/assets/9437e729-a1b8-47be-8c0a-6d8bbf61c4df" />
+<img width="2992" alt="Image" src="https://github.com/user-attachments/assets/5af13a46-748a-4acd-95bb-34073c513302" />
 
 
 
