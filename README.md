@@ -6,7 +6,7 @@
 Este projeto informatiza o processo de matrículas da universidade, facilitando a gestão de cursos, disciplinas, alunos e professores. Os alunos podem se inscrever em até quatro disciplinas obrigatórias e duas optativas dentro do período de matrículas, podendo também cancelar inscrições. Para que uma disciplina seja oferecida, é necessário um mínimo de três alunos matriculados, com um limite máximo de 60 por turma. O sistema também integra notificações para cobrança das disciplinas e permite que os professores consultem as listas de alunos matriculados. O acesso é protegido por login e senha, garantindo a segurança das informações.
 
 # Diagrama de Caso de Uso
-<img width="2992" alt="Image" src="https://github.com/user-attachments/assets/5af13a46-748a-4acd-95bb-34073c513302" />
+<img width="2992" alt="Image" src="https://github.com/user-attachments/assets/52d1a4e8-3aef-439e-b93d-17a22b5db1c5" />
 
 # Histórias de Usuário
 | ID  | História de Usuário |
@@ -22,10 +22,10 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 | UC9  | Como secretário acadêmico, quero definir e atualizar o currículo do semestre. |
 | UC10 | Como secretário acadêmico, quero criar turmas para cada curso. |
 | UC11 | Como secretário acadêmico, quero visualizar matrículas feitas pelos alunos. |
-| UC12 | Como secretário acadêmico, quero definir os períodos de matrícula no sistema. |
-| UC13 | Como secretário acadêmico, quero gerenciar a quantidade de alunos por disciplina. |
-| UC14 | Como secretário acadêmico, quero criar usuários para que alunos e professores tenham acesso ao sistema. |
-| UC15 | Como secretário acadêmico, quero acessar o sistema com meu login e senha. |
+| UC12 | Como Administrador, quero definir os períodos de matrícula no sistema. |
+| UC13 | Como Administrador, quero gerenciar a quantidade de alunos por disciplina. |
+| UC14 | Como Administrador, quero criar usuários para que alunos e professores tenham acesso ao sistema. |
+| UC15 | Como Administrador, quero acessar o sistema com meu login e senha. |
 
 # Diagrama de Classes
 <img width="3216" alt="Image" src="https://github.com/user-attachments/assets/8e8f4593-c51e-447f-9cdb-e0f866f18e3c" />
