@@ -1,21 +1,16 @@
 package com.AcademicoPlus.AcademicoPlus.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
-// Classe Professor
 public class Professor extends Usuario {
-    private String codigo;
-    private List<Disciplina> disciplinas;
+    private List<Disciplina> disciplinas = new ArrayList<>();
 
-    public List<Aluno> listarAlunos() { return null; }
-    public List<Disciplina> consultarDisciplinas() { return disciplinas; }
-    
-    @Override
-    public void fazerLogin() {
-       
+    public Professor(String cpf, String nome, String senha) {
+        super(cpf, nome, senha);
     }
-    @Override
-    public void fazerLogout() {
 
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
     }
 }

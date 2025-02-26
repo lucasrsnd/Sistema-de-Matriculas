@@ -1,17 +1,27 @@
 package com.AcademicoPlus.AcademicoPlus.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
-// Classe Disciplina
 public class Disciplina {
-    private String codigo;
     private String nome;
-    private int cargaHoraria;
-    private int numeroCreditos;
     private Professor professor;
-    private List<Aluno> alunosMatriculados;
+    private List<Aluno> alunosMatriculados = new ArrayList<>();
 
-    public boolean verificarDisponibilidade() { return false; }
-    public boolean adicionarAluno(Aluno aluno) { return false; }
-    public boolean removerAluno(Aluno aluno) { return false; }
+    public Disciplina(String nome, Professor professor) {
+        this.nome = nome;
+        this.professor = professor;
+    }
+
+    public String getNome() { return nome; }
+    public Professor getProfessor() { return professor; }
+    public List<Aluno> getAlunosMatriculados() { return alunosMatriculados; }
+
+    public boolean adicionarAluno(Aluno aluno) {
+        if (alunosMatriculados.size() < 60) {
+            alunosMatriculados.add(aluno);
+            return true;
+        }
+        return false;
+    }
 }

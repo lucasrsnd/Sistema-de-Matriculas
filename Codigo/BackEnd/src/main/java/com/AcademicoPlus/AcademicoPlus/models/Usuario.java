@@ -1,15 +1,17 @@
 package com.AcademicoPlus.AcademicoPlus.models;
 
-import java.util.Date;
-import java.util.List;
-
-// Classe base Usuario
-public abstract class Usuario {
-    protected int id;
+public class Usuario {
+    protected String cpf;
     protected String nome;
-    protected String email;
     protected String senha;
 
-    public abstract void fazerLogin();
-    public abstract void fazerLogout();
+    public Usuario(String cpf, String nome, String senha) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.senha = senha;
+    }
+
+    public String getCpf() { return cpf; }
+    public String getNome() { return nome; }
+    public String getSenha() { return senha; }
 }
