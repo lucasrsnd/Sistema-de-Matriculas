@@ -31,7 +31,7 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 <img width="3216" alt="Image" src="https://github.com/user-attachments/assets/8e8f4593-c51e-447f-9cdb-e0f866f18e3c" />
 
 # Estrutura dos Diretórios
-src/  
+```src/  
 │  
 ├── controller/  
 │   └── AdminController.java  
@@ -53,6 +53,7 @@ src/
 │   └── AlunoView.java  
 │   └── ProfessorView.java  
 │  
-└── Main.java  
+└── Main.java
+```
   
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00BFFF&height=120&section=footer"/>
