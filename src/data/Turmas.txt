@@ -1,0 +1,2 @@
+Calculo|Fisica|2|20|098|150.0
+SO|Engenharia de Software|10|20|098|150.0
