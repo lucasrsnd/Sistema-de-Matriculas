@@ -1,3 +1,0 @@
-Banco de Dados,Sistemas,tarde,3,35,true,400.0,0123
-Arquitetura de pika,Basqueta,noite,9,20,false,300.0,0123
-Fundamentos,Fisica,noite,3,30,true,500.0,0123
