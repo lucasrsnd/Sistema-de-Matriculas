@@ -28,7 +28,7 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 | UC15 | Como Administrador, quero acessar o sistema com meu login e senha. |
 
 # Diagrama de Classes
-<img width="3216" alt="Image" src="https://github.com/user-attachments/assets/8e8f4593-c51e-447f-9cdb-e0f866f18e3c" />
+<img width="2512" alt="Image" src="https://github.com/user-attachments/assets/86030f0b-c1fd-4263-8edc-b13143220989" />
 
 # Estrutura dos Diretórios
 ```
