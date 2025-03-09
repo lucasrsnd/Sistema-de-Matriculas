@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 import src.controller.AdminController;
 import src.controller.AlunoController;
 import src.controller.ProfessorController;

@@ -1,13 +1,14 @@
 package src.controller;
 
-import src.model.Usuario;
-import src.model.Turma;
-import src.model.Matricula;
-import src.view.AdminView;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import src.model.Turma;
+import src.model.Usuario;
+import src.view.AdminView;
 
 public class AdminController {
 
@@ -34,13 +35,14 @@ public class AdminController {
                     gerenciarMatriculas();
                     break;
                 case 5:
-                    sair = true;
+                    sair = true;  // Esse "sair" vai sair do loop, mas não encerra o programa
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
         }
     }
+    
 
     // Método para criar uma turma
     private void criarTurma() {

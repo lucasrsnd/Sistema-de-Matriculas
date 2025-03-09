@@ -1,3 +1,2 @@
-123|joao|Aluno
-098|Laerte|Professor
-098|Lesandro|Professor
+167|Lesandro|Professor
+147|Lucas|Aluno

@@ -67,6 +67,25 @@ public class Matricula {
         return codigoAluno + "|" + nomeTurma + "|" + nomeCurso + "|" + codigoProfessor;
     }
 
+    // Método para buscar todas as matrículas de uma turma
+public static List<Matricula> buscarMatriculasPorTurma(String nomeTurma) {
+    List<Matricula> matriculas = new ArrayList<>();
+    try (BufferedReader reader = new BufferedReader(new FileReader("src/data/Matriculas.txt"))) {
+        String linha;
+        while ((linha = reader.readLine()) != null) {
+            String[] dados = linha.split("\\|");
+            if (dados[1].equals(nomeTurma)) {  // Verifica se o nome da turma corresponde
+                Matricula matricula = new Matricula(dados[0], dados[1], dados[2], dados[3]);
+                matriculas.add(matricula);
+            }
+        }
+    } catch (IOException e) {
+        System.out.println("Erro ao buscar matrículas: " + e.getMessage());
+    }
+    return matriculas;
+}
+
+
     // Método para buscar todas as matrículas de um aluno
     public static List<Matricula> buscarMatriculasPorAluno(String codigoAluno) {
         List<Matricula> matriculas = new ArrayList<>();
