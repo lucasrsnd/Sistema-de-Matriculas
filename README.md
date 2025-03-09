@@ -30,4 +30,31 @@ Este projeto informatiza o processo de matrículas da universidade, facilitando 
 # Diagrama de Classes
 <img width="3216" alt="Image" src="https://github.com/user-attachments/assets/8e8f4593-c51e-447f-9cdb-e0f866f18e3c" />
 
+# Estrutura dos Diretórios
+```
+src/  
+│  
+├── controller/  
+│   └── AdminController.java  
+│   └── AlunoController.java  
+│   └── ProfessorController.java  
+│  
+├── data/  
+│   └── Matriculas.txt  
+│   └── Turmas.txt  
+│   └── Usuarios.txt  
+│  
+├── model/  
+│   └── Matricula.java  
+│   └── Turma.java  
+│   └── Usuario.java  
+│  
+├── view/  
+│   └── AdminView.java  
+│   └── AlunoView.java  
+│   └── ProfessorView.java  
+│  
+└── Main.java
+```
+  
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00BFFF&height=120&section=footer"/>
