@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Usuario {
     private String codigo;
     private String nome;
-    private String tipoUsuario; // "Aluno" ou "Professor"
+    private String tipoUsuario;
 
     public Usuario(String codigo, String nome, String tipoUsuario) {
         this.codigo = codigo;
@@ -15,7 +15,6 @@ public class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 
-    // Getters e Setters
     public String getCodigo() {
         return codigo;
     }
@@ -40,12 +39,10 @@ public class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 
-    // Método para representar o usuário como uma string para salvar no arquivo
     public String toString() {
         return codigo + "|" + nome + "|" + tipoUsuario;
     }
 
-    // Método para buscar um aluno por código
     public static Usuario buscarUsuarioPorCodigo(String codigo) {
         try (BufferedReader reader = new BufferedReader(new FileReader("src/data/Usuarios.txt"))) {
             String linha;

@@ -8,34 +8,31 @@ import java.util.List;
 
 public class Matricula {
     private String codigoAluno;
+    private String nomeAluno;
     private String nomeTurma;
     private String nomeCurso;
-    private String codigoProfessor; // Adicionando código do professor
-    private String nomeAluno;
-    
-        // Construtor atualizado para incluir o código do professor
-        public Matricula(String codigoAluno, String nomeTurma, String nomeCurso, String codigoProfessor) {
-            this.codigoAluno = codigoAluno;
-            this.nomeTurma = nomeTurma;
-            this.nomeCurso = nomeCurso;
-            this.codigoProfessor = codigoProfessor;
-        }
-    
-        // Getters e Setters
-        public String getCodigoAluno() {
-            return codigoAluno;
-        }
-    
-        public void setCodigoAluno(String codigoAluno) {
-            this.codigoAluno = codigoAluno;
-        }
-    
-        public String getNomeAluno() {
-            return nomeAluno;
-        }
-    
-        public void setNomeAluno(String nomeAluno) {
-            this.nomeAluno = nomeAluno;
+
+    public Matricula(String codigoAluno, String nomeAluno, String nomeTurma, String nomeCurso) {
+        this.codigoAluno = codigoAluno;
+        this.nomeAluno = nomeAluno;
+        this.nomeTurma = nomeTurma;
+        this.nomeCurso = nomeCurso;
+    }
+
+    public String getCodigoAluno() {
+        return codigoAluno;
+    }
+
+    public void setCodigoAluno(String codigoAluno) {
+        this.codigoAluno = codigoAluno;
+    }
+
+    public String getNomeAluno() {
+        return nomeAluno;
+    }
+
+    public void setNomeAluno(String nomeAluno) {
+        this.nomeAluno = nomeAluno;
     }
 
     public String getNomeTurma() {
@@ -54,39 +51,11 @@ public class Matricula {
         this.nomeCurso = nomeCurso;
     }
 
-    public String getCodigoProfessor() {
-        return codigoProfessor;
-    }
-
-    public void setCodigoProfessor(String codigoProfessor) {
-        this.codigoProfessor = codigoProfessor;
-    }
-
-    // Método para representar a matrícula como uma string para salvar no arquivo
+    @Override
     public String toString() {
-        return codigoAluno + "|" + nomeTurma + "|" + nomeCurso + "|" + codigoProfessor;
+        return codigoAluno + "|" + nomeAluno + "|" + nomeTurma + "|" + nomeCurso;
     }
 
-    // Método para buscar todas as matrículas de uma turma
-public static List<Matricula> buscarMatriculasPorTurma(String nomeTurma) {
-    List<Matricula> matriculas = new ArrayList<>();
-    try (BufferedReader reader = new BufferedReader(new FileReader("src/data/Matriculas.txt"))) {
-        String linha;
-        while ((linha = reader.readLine()) != null) {
-            String[] dados = linha.split("\\|");
-            if (dados[1].equals(nomeTurma)) {  // Verifica se o nome da turma corresponde
-                Matricula matricula = new Matricula(dados[0], dados[1], dados[2], dados[3]);
-                matriculas.add(matricula);
-            }
-        }
-    } catch (IOException e) {
-        System.out.println("Erro ao buscar matrículas: " + e.getMessage());
-    }
-    return matriculas;
-}
-
-
-    // Método para buscar todas as matrículas de um aluno
     public static List<Matricula> buscarMatriculasPorAluno(String codigoAluno) {
         List<Matricula> matriculas = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("src/data/Matriculas.txt"))) {
@@ -104,7 +73,6 @@ public static List<Matricula> buscarMatriculasPorTurma(String nomeTurma) {
         return matriculas;
     }
 
-    // Método para verificar se o aluno já está matriculado em uma turma
     public static boolean alunoJaMatriculado(String codigoAluno, String nomeTurma) {
         List<Matricula> matriculas = buscarMatriculasPorAluno(codigoAluno);
         for (Matricula matricula : matriculas) {
@@ -115,7 +83,6 @@ public static List<Matricula> buscarMatriculasPorTurma(String nomeTurma) {
         return false;
     }
 
-    // Método para cancelar a matrícula
     public static boolean cancelarMatricula(String codigoAluno, String nomeTurma) {
         List<Matricula> matriculas = buscarMatriculasPorAluno(codigoAluno);
         for (Matricula matricula : matriculas) {

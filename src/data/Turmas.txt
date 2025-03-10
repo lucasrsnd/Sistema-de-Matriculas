@@ -1,1 +1,2 @@
-SO|Engenharia de Software|20|30|167|190.0
+Calculo|Fisica|2|20|098|150.0
+Teste|historia|2|12|098|80.0

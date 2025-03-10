@@ -1,2 +1,2 @@
-167|Lesandro|Professor
-147|Lucas|Aluno
+123|joao|Aluno
+098|Laerte|Professor

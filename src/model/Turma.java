@@ -8,7 +8,8 @@ public class Turma {
     private String codigoProfessor;
     private double precoMensalidade;
 
-    public Turma(String nomeTurma, String nomeCurso, int minAlunos, int maxAlunos, String codigoProfessor, double precoMensalidade) {
+    public Turma(String nomeTurma, String nomeCurso, int minAlunos, int maxAlunos, String codigoProfessor,
+            double precoMensalidade) {
         this.nomeTurma = nomeTurma;
         this.nomeCurso = nomeCurso;
         this.minAlunos = minAlunos;
@@ -17,7 +18,6 @@ public class Turma {
         this.precoMensalidade = precoMensalidade;
     }
 
-    // Getters e Setters
     public String getNomeTurma() {
         return nomeTurma;
     }
@@ -66,8 +66,8 @@ public class Turma {
         this.precoMensalidade = precoMensalidade;
     }
 
-    // Método para representar a turma como uma string para salvar no arquivo
     public String toString() {
-        return nomeTurma + "|" + nomeCurso + "|" + minAlunos + "|" + maxAlunos + "|" + codigoProfessor + "|" + precoMensalidade;
+        return nomeTurma + "|" + nomeCurso + "|" + minAlunos + "|" + maxAlunos + "|" + codigoProfessor + "|"
+                + precoMensalidade;
     }
 }

@@ -6,7 +6,6 @@ public class AdminView {
 
     private Scanner scanner = new Scanner(System.in);
 
-    // Método para exibir o menu do administrador
     public void exibirMenu() {
         System.out.println("\n=== Menu Administrador ===");
         System.out.println("1. Criar Turma");
@@ -15,22 +14,6 @@ public class AdminView {
         System.out.println("4. Gerenciar Matrículas");
         System.out.println("5. Voltar ao Menu Principal");
         System.out.print("Escolha uma opção: ");
-    }
-
-    // Método para obter a opção escolhida pelo administrador
-    public int obterOpcao() {
-        return Integer.parseInt(scanner.nextLine());
-    }
-
-    // Métodos auxiliares para obter dados necessários (nome da turma, nome do curso, etc.)
-    public String obterNomeTurma() {
-        System.out.print("Digite o nome da turma: ");
-        return scanner.nextLine();
-    }
-
-    public String obterNomeCurso() {
-        System.out.print("Digite o nome do curso: ");
-        return scanner.nextLine();
     }
 
     public int obterMinAlunos() {
@@ -67,5 +50,30 @@ public class AdminView {
         System.out.print("Digite o nome do usuário: ");
         return scanner.nextLine();
     }
-}
 
+    public String obterNomeTurma() {
+        System.out.print("Digite o nome da turma: ");
+        return scanner.nextLine();
+    }
+
+    public String obterNomeCurso() {
+        System.out.print("Digite o nome do curso: ");
+        return scanner.nextLine();
+    }
+
+    public String obterCodigoAluno() {
+        System.out.print("Digite o código do aluno: ");
+        return scanner.nextLine();
+    }
+
+    public String obterNomeAluno() {
+        System.out.print("Digite o nome do aluno: ");
+        return scanner.nextLine();
+    }
+
+    public int obterOpcao() {
+        System.out.print("Escolha uma opção: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+
+}

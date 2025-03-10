@@ -1,6 +1,6 @@
 package src.view;
 
-import src.model.Matricula; // Importando a classe Matricula
+import src.model.Matricula;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,7 +12,6 @@ public class AlunoView {
 
     private Scanner scanner = new Scanner(System.in);
 
-    // Método para exibir o menu do aluno
     public void exibirMenu() {
         System.out.println("\n=== Menu Aluno ===");
         System.out.println("1. Matricular-se em Turmas");
@@ -22,12 +21,10 @@ public class AlunoView {
         System.out.print("Escolha uma opção: ");
     }
 
-    // Método para obter a opção escolhida pelo aluno
     public int obterOpcao() {
         return Integer.parseInt(scanner.nextLine());
     }
 
-    // Métodos auxiliares para obter dados necessários (nome da turma, nome do curso, etc.)
     public String obterNomeTurma() {
         System.out.print("Digite o nome da turma: ");
         return scanner.nextLine();
@@ -43,11 +40,9 @@ public class AlunoView {
         return scanner.nextLine();
     }
 
-    public void mostrarMatriculas(List<Matricula> matriculas) {
-        System.out.println("\nTurmas em que você está matriculado:");
-        for (Matricula matricula : matriculas) {
-            System.out.println("- " + matricula.getNomeTurma() + " - " + matricula.getNomeCurso());
-        }
+    public String obterNomeAluno() {
+        System.out.print("Digite seu nome: ");
+        return scanner.nextLine();
     }
 
     public void mostrarBoleto(List<Matricula> matriculas) {
@@ -67,4 +62,13 @@ public class AlunoView {
         }
         System.out.println("Total a pagar: " + totalBoleto);
     }
+
+    public void mostrarMatriculas(List<Matricula> matriculas) {
+        System.out.println("\nSuas matrículas:");
+        for (int i = 0; i < matriculas.size(); i++) {
+            Matricula matricula = matriculas.get(i);
+            System.out.println((i + 1) + ". " + matricula.getNomeTurma() + " - " + matricula.getNomeCurso());
+        }
+    }
+
 }
